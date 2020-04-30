@@ -15,14 +15,10 @@ const Main= styled.div`
 export default function App() {
     return (
         <TaskListContextProvider>
-        {/* <div className="container"> */}
-        {/* <div className="app-wrapper"> */}
         <Main>
             <TaskForm/>
             <TaskList/>
         </Main>
-        {/* </div> */}
-        {/* </div> */}
         </TaskListContextProvider>
     )
 }
