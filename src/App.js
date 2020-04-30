@@ -2,23 +2,19 @@ import React from 'react'
 import TaskList from './components/TaskList'
 import TaskForm from './components/TaskForm'
 import TaskListContextProvider from './context/TaskContext'
-import styled from '@emotion/styled'
-
-const Main= styled.div`
- width:40vw;
- background-color:pink;
- padding:10%;
- margin: 20vh auto;
- text-align:center;
-`;
+import "./App.css"
 
 export default function App() {
     return (
         <TaskListContextProvider>
-        <Main>
+        <div className="container">
+        <div className="app-wrapper">
+        <div className="main">
             <TaskForm/>
             <TaskList/>
-        </Main>
+        </div>
+        </div>
+        </div>
         </TaskListContextProvider>
     )
 }

@@ -9,11 +9,9 @@ export default function Task({task}) {
                 <span>{task.title}</span>
                 <div>
                     <button className="btn-delete task-btn" onClick={()=>removeTask(task.id)}>
-                        Delete
                         <i className="fas fa-trash-alt"></i>
                     </button>
                     <button className="btn-delete task-btn" onClick={()=>findItem(task.id)}>
-                        edit
                         <i className="fas fa-pen"></i>
                     </button>
                 </div>
